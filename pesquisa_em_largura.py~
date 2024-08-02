@@ -13,11 +13,11 @@ def bfs(graph, start):
 
         for vizinho in graph[vertex]: #Para cada vizinho
             if vizinho not in visited:
-                queue.append(vizinho) #Adiciona os vizinmhos na fila 
-                visited.add(vizinho) #Adiciona os vizinhos na lista de visitados
+                queue.append(vizinho)
+                visited.add(vizinho)
 
 
-graph = { #Vertices e seus vizinhos
+graph = {
 
     'A': ['B', 'C'],
     'B': ['A', 'D', 'E'],
@@ -27,4 +27,4 @@ graph = { #Vertices e seus vizinhos
     'F': ['C', 'E']
 }
 
-bfs(graph, 'A') #Chamada da função
+bfs(graph, 'A')
