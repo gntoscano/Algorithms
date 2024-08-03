@@ -6,9 +6,9 @@ def paths(grafo, inicio):
 
     while queue:
         vertices = queue.popleft()
-        print(vertices, end = ' ')
+        print(vertices, end = '; ')
 
-        for vizinho in grafo[vertices]:
+        for vizinho in grafo.get(vertices, []):
             if vizinho not in visited:
                 queue.append(vizinho)
                 visited.add(vizinho)
